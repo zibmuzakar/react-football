@@ -1,0 +1,35 @@
+
+  .swiperNews .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    left: 25px !important;
+  }
+
+  @media(max-width:765px){
+    .swiperNews .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+      display: none;
+    }
+  }
+
+  /* target the active bullet */
+  .swiperNews span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #1C6DD0;
+    opacity: 1;
+  }
+  .swiperNews span.swiper-pagination-bullet.swiper-pagination-bullet-active-next {
+    
+    border: solid 2px white;
+    background-color:transparent;
+  }
+  
+  .swiperNews span.swiper-pagination-bullet.swiper-pagination-bullet-active-prev {
+    
+    border: solid 2px white;
+    background-color:transparent;
+  }
+
+
+  /* target all bullets */
+  .swiperNews .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: .5;
+  }
