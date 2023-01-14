@@ -41,6 +41,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      nextmatch: 'rgba(28, 109, 208, 0.86)',
     }),
     columns: {
       auto: 'auto',
