@@ -61,7 +61,7 @@ const Hero = () => {
                       {/* home */}
                       <div className='flex flex-col items-center'>
                         {/* img */}
-                        <img className='h-[75px] mb-2' src={`http://api.fiveoneo.com/images/${pertandingan.home['image']}`} alt='' />
+                        <img className='h-[75px] mb-2' src={pertandingan.home['image']} alt='' />
                         <p className='font-normal max-w-[120px] max-h-[20px] leading-none text-[20px] text-center'>{pertandingan.home['name']}</p>
                       </div>
                       {/* txt vs */}
@@ -69,7 +69,7 @@ const Hero = () => {
                       {/* away */}
                       <div className='flex flex-col items-center'>
                         {/* img */}
-                        <img className='h-[75px] mb-2' src={`http://api.fiveoneo.com/images/${pertandingan.away['image']}`} alt='' />
+                        <img className='h-[75px] mb-2' src={pertandingan.away['image']} alt='' />
                         <p className='font-normal max-w-[120px] max-h-[20px] leading-none text-[20px] text-center'>{pertandingan.away['name']}</p>
                       </div>
                     </div>
