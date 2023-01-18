@@ -30,7 +30,7 @@ const Tables = () => {
         </div>
       </div>
       <div className='mx-4'>
-        <table className="table-auto text-sm w-full text-center">
+        <table className="mytable table text-sm w-full text-center">
             <thead className='text-slate-400 font-normal'>
                 <tr>
                   <th>Pos</th>
@@ -45,7 +45,7 @@ const Tables = () => {
                 return(
                   <tr className='h-[40px] border-b' key={index}>
                     <td>{index + 1}</td>
-                    <td className='pl-2 w-[150px]'>
+                    <td className='pl-2 max-w-[150px] text-start long-td capitalize'>
                       <div className='flex items-center gap-x-2'>
                         <img className='h-[20px]' src={table.club_id['image']} alt='' />{table.club_id['name']}
                       </div>

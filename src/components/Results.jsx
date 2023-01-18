@@ -47,7 +47,7 @@ const Results = () => {
               <div className='flex items-center justify-between w-full lg:w-[600px]'>
                 {/* home */}
                 <div className='flex items-center justify-between'>
-                  <div className='text-center text-sm lg:text-normal w-[100px] lg:w-[200px]'><p>{ result.home['name'] }</p></div>
+                  <div className='text-center text-sm lg:text-normal w-[100px] lg:w-[200px]'><p className='capitalize'>{ result.home['name'] }</p></div>
                   <img className='h-[30px]' src={result.home['image']} alt='' />
                 </div>
                 {/* score */}
@@ -55,7 +55,7 @@ const Results = () => {
                 {/* away */}
                 <div className='flex items-center justify-between'>
                   <img className='h-[30px]' src={result.away['image']} alt='' />
-                  <div className='text-center text-sm lg:text-normal w-[100px] lg:w-[200px]'><p>{ result.away['name'] }</p></div>
+                  <div className='text-center text-sm lg:text-normal w-[100px] lg:w-[200px]'><p className='capitalize'>{ result.away['name'] }</p></div>
                 </div>
               </div>
               <div className='w-[40px] h-full bg-[#1C6DD0] hover:bg-[#1f76e0] text-white cursor-pointer flex items-center'>

@@ -6,9 +6,11 @@ import { FaInstagram, FaFacebookF, FaTiktok, FaYoutube } from 'react-icons/fa';
 
 // import data
 import { navigation } from '../data';
+import NavMobile from './NavMobile';
 
 const Header = () => {
     const [bg, setBg] = useState(false);
+    const [mobileNav, setMobileNav] = useState(false);
     useEffect(() => {
         window.addEventListener('scroll', () => {
         return window.scrollY > 50 ? setBg(true) : setBg(false);
@@ -27,10 +29,10 @@ const Header = () => {
           </a>
           {/* menu icons */}
           <div
-            
+            onClick={() => setMobileNav(!mobileNav)}
             className='text-2xl text-white md:hidden lg:text-3xl cursor-pointer'
           >
-            
+            {mobileNav ? <CgClose /> : <CgMenuRight />}
           </div>
           {/* nav */}
           <nav className='hidden md:flex'>
@@ -57,11 +59,11 @@ const Header = () => {
             <FaYoutube />
           </div>
           {/* navmobile */}
-          {/* <div
+          <div
             className={`${mobileNav ? 'left-0' : '-left-full'} md:hidden fixed bottom-0 w-full max-w-xs h-full transition-all`}
           >
             <NavMobile />
-          </div> */}
+          </div>
         </div>
       </div>
     </header>
