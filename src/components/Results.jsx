@@ -11,6 +11,8 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 // import Topassist from './Topassist.js';
 // import logo
 import Logo from '../assets/img/logo/logo-bpl.png';
+import Topscore from './Topscore';
+import Topassist from './Topassist';
 
 const Results = () => {
   moment.locale('ar');
@@ -68,10 +70,10 @@ const Results = () => {
           <button className='pl-6 text-[15px] text-white bg-[#1C6DD0] hover:bg-[#1f76e0] rounded-sm flex items-center'>View All <MdKeyboardArrowRight className='text-[30px]'/></button>
         </div>
       </div>
-      {/* <div className='flex flex-col md:flex-row gap-y-4 md:gap-x-4'>
+      <div className='flex flex-col md:flex-row gap-y-4 md:gap-x-4'>
         <Topscore />
         <Topassist />
-      </div> */}
+      </div>
     </div>
   )
 }

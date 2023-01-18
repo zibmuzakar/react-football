@@ -15,7 +15,8 @@
     "react-dom": "^18.0.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.2",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "@tailwindcss/line-clamp": "^0.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
