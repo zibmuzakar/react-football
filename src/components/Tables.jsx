@@ -29,30 +29,30 @@ const Tables = () => {
           <h3 className='font-semibold'>Bandung Premiere League</h3>
         </div>
       </div>
-      <div className='mx-4'>
-        <table className="mytable table text-sm w-full text-center">
+      <div className='mx-2 lg:mx-4'>
+        <table className="table table-auto text-sm w-full text-center">
             <thead className='text-slate-400 font-normal'>
                 <tr>
-                  <th>Pos</th>
-                  <th className='pl-2 w-[150px]'>Club</th>
-                  <th className='pl-2'>Pl</th>
-                  <th className='pl-2'>GD</th>
-                  <th className='pl-2'>Pts</th>
+                  <th className='w-[40px]'>Pos</th>
+                  <th className='lg:pl-2 w-[150px]'>Club</th>
+                  <th className='lg:pl-2'>Pl</th>
+                  <th className='lg:pl-2'>GD</th>
+                  <th className='lg:pl-2'>Pts</th>
                 </tr>
             </thead>
             <tbody>
               {tables.map((table, index) => {
                 return(
                   <tr className='h-[40px] border-b' key={index}>
-                    <td>{index + 1}</td>
-                    <td className='pl-2 max-w-[150px] text-start long-td capitalize'>
+                    <td className='w-[40px]'>{index + 1}</td>
+                    <td className='pl-0 lg:pl-2 max-w-[150px] text-start long-td capitalize'>
                       <div className='flex items-center gap-x-2'>
                         <img className='h-[20px]' src={table.club_id['image']} alt='' />{table.club_id['name']}
                       </div>
                     </td>
-                    <td className='pl-2'>{table.played}</td>
-                    <td className='pl-2'>{table.gf}</td>
-                    <td className='pl-2 font-semibold'>{table.point}</td>
+                    <td className='pl-0 lg:pl-2'>{table.played}</td>
+                    <td className='pl-0 lg:pl-2'>{table.gf}</td>
+                    <td className='pl-0 lg:pl-2 font-semibold'>{table.point}</td>
                   </tr>
                 );
               })}

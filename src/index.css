@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.mytable {
-    border-collapse: collapse;
-    width: 400px;
-    table-layout: fixed;
-}
+
 
 .long-td {
     overflow: hidden;

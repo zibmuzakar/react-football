@@ -35,7 +35,7 @@ const Results = () => {
       <div className='w-full lg:max-w-[850px]'>
         {results.map((result, index) => {
           return(    
-            <div className='h-[50px] mb-4 shadow-md flex flex-row items-center justify-between pl-6 gap-x-2' key={index}>
+            <div className='h-[50px] mb-4 shadow-md flex flex-row items-center justify-between pl-2 lg:pl-6 gap-x-2' key={index}>
               {/* time */}
               <div className='hidden lg:flex flex-row items-center'>
                 <p className='pr-2 mr-2 border-r text-[12px] border-black flex items-center'>{moment(result.jadwal).format("ll")}</p>
@@ -49,7 +49,7 @@ const Results = () => {
               <div className='flex items-center justify-between w-full lg:w-[600px]'>
                 {/* home */}
                 <div className='flex items-center justify-between'>
-                  <div className='text-center text-sm lg:text-normal w-[100px] lg:w-[200px]'><p className='capitalize'>{ result.home['name'] }</p></div>
+                  <div className='text-center text-sm lg:text-normal w-[90px] lg:w-[200px]'><p className='capitalize truncate text-ellipsis'>{ result.home['name'] }</p></div>
                   <img className='h-[30px]' src={result.home['image']} alt='' />
                 </div>
                 {/* score */}
@@ -57,10 +57,10 @@ const Results = () => {
                 {/* away */}
                 <div className='flex items-center justify-between'>
                   <img className='h-[30px]' src={result.away['image']} alt='' />
-                  <div className='text-center text-sm lg:text-normal w-[100px] lg:w-[200px]'><p className='capitalize'>{ result.away['name'] }</p></div>
+                  <div className='text-center text-sm lg:text-normal w-[90px] lg:w-[200px]'><p className='capitalize truncate text-ellipsis'>{ result.away['name'] }</p></div>
                 </div>
               </div>
-              <div className='w-[40px] h-full bg-[#1C6DD0] hover:bg-[#1f76e0] text-white cursor-pointer flex items-center'>
+              <div className='w-[30px] lg:w-[40px] h-full bg-[#1C6DD0] hover:bg-[#1f76e0] text-white cursor-pointer flex items-center'>
                 <MdKeyboardArrowRight className='text-[45px]'/>
               </div>
             </div>
